@@ -47,4 +47,7 @@ Desarrollar una página web funcional y visualmente atractiva para un restaurant
 
 ## Autor(es)
 
-Proyecto desarrollado como parte de una actividad académica.
+-> Yelder Alexis Oporta Cano
+-> Jafet Isai Sequeira Rocha
+-> Estefany Valeria Rocha Sandoval
+-> Lesyany Massiel Mc Field Obando
