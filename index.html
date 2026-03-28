@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Doña Bochita | Restaurante Gourmet</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind Custom Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#3e0407",
+                        "surface-dim": "#161311",
+                        "on-secondary": "#621102",
+                        "secondary-fixed-dim": "#ffb4a4",
+                        "inverse-surface": "#eae1dd",
+                        "surface": "#161311",
+                        "background": "#161311",
+                        "on-background": "#eae1dd",
+                        "tertiary": "#ffb3af",
+                        "on-secondary-container": "#ff9a84",
+                        "primary-container": "#604c00",
+                        "on-error": "#690005",
+                        "tertiary-container": "#823735",
+                        "on-primary": "#3c2f00",
+                        "secondary": "#ffb4a4",
+                        "primary": "#e9c349",
+                        "surface-container": "#231f1d",
+                        "outline": "#a58b85",
+                        "on-tertiary-fixed-variant": "#782f2d",
+                        "primary-fixed-dim": "#e9c349",
+                        "primary-fixed": "#ffe088",
+                        "surface-container-highest": "#393431",
+                        "outline-variant": "#56423d",
+                        "inverse-primary": "#735c00",
+                        "on-primary-fixed-variant": "#574500",
+                        "error-container": "#93000a",
+                        "surface-container-low": "#1f1b19",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed": "#3d0600",
+                        "on-secondary-fixed-variant": "#812714",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "surface-tint": "#e9c349",
+                        "error": "#ffb4ab",
+                        "inverse-on-surface": "#342f2d",
+                        "on-surface": "#eae1dd",
+                        "surface-bright": "#3d3836",
+                        "secondary-container": "#812714",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-variant": "#393431",
+                        "on-surface-variant": "#ddc0ba",
+                        "secondary-fixed": "#ffdad3",
+                        "surface-container-high": "#2e2927",
+                        "on-tertiary": "#5b1919",
+                        "on-primary-fixed": "#241a00",
+                        "on-primary-container": "#e2bc43",
+                        "surface-container-lowest": "#110d0c",
+                        "on-tertiary-container": "#ffaba6"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="font-body selection:bg-primary selection:text-on-primary">
+    <!-- Barra de Navegación Superior -->
+    <nav class="bg-[#161311] dark:bg-stone-950/70 backdrop-blur-md fixed top-0 w-full z-50 shadow-2xl shadow-black/20">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div
+                class="text-2xl font-serif font-bold text-[#e9c349] dark:text-yellow-500 font-serif italic tracking-tight">
+                Doña Bochita
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <span class="nav-item text-[#e9c349] border-b-2 border-[#e9c349] pb-1 font-serif italic tracking-tight"
+                    data-nav="Inicio">Inicio</span>
+                <span class="nav-item text-[#eae1dd] opacity-80 font-serif italic tracking-tight"
+                    data-nav="Menú">Menú</span>
+                <span class="nav-item text-[#eae1dd] opacity-80 font-serif italic tracking-tight"
+                    data-nav="Reservas">Reservas</span>
+                <span class="nav-item text-[#eae1dd] opacity-80 font-serif italic tracking-tight"
+                    data-nav="Nosotros">Nosotros</span>
+                <span class="nav-item text-[#eae1dd] opacity-80 font-serif italic tracking-tight"
+                    data-nav="Opiniones">Opiniones</span>
+                <span class="nav-item text-[#eae1dd] opacity-80 font-serif italic tracking-tight"
+                    data-nav="Contacto">Contacto</span>
+            </div>
+            <span
+                class="btn-primary text-on-primary px-6 py-2 rounded-md font-label text-sm font-bold tracking-wide action-button"
+                data-btn="Reservar Mesa">
+                Reservar Mesa
+            </span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sección Hero -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-cover-center hero-bg-image"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="md:col-span-7 flex flex-col justify-center">
+                    <span class="text-primary font-label tracking-[0.3em] uppercase mb-4 text-sm font-bold">La
+                        Experiencia del Sommelier Nocturno</span>
+                    <h1 class="text-6xl md:text-8xl font-headline text-on-surface leading-tight mb-8 -ml-1 italic">
+                        Emplatar <br /> <span class="text-primary">Poesía</span> para <br /> los Sentidos.
+                    </h1>
+                    <p class="text-on-surface-variant text-lg max-w-lg mb-10 leading-relaxed">
+                        Donde la alta cocina se encuentra con la narrativa editorial. Cada plato es un capítulo, cada
+                        ingrediente una palabra cuidadosamente elegida en nuestra historia culinaria.
+                    </p>
+                    <div class="flex gap-6">
+                        <span
+                            class="btn-primary text-on-primary px-8 py-4 rounded-md font-label font-bold text-sm tracking-widest uppercase action-button"
+                            data-btn="Ver Menú">
+                            Ver Menú
+                        </span>
+                        <span
+                            class="btn-secondary border border-outline-variant/40 text-on-surface px-8 py-4 rounded-md font-label font-bold text-sm tracking-widest uppercase action-button"
+                            data-btn="Nuestra Historia">
+                            Nuestra Historia
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Historia -->
+        <section class="py-32 bg-surface-container-low">
+            <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-20">
+                <div class="w-full md:w-1/2 relative">
+                    <div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-cover-center story-image"></div>
+                    <div class="absolute -bottom-12 -right-12 w-64 h-64 hidden md:block">
+                        <div
+                            class="w-full h-full rounded-lg shadow-2xl border-4 border-surface bg-cover-center dessert-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-headline text-on-surface mb-8 italic">Una Narrativa del Sabor
+                    </h2>
+                    <div class="space-y-6 text-on-surface-variant leading-loose text-lg">
+                        <p>Fundado en las horas tranquilas de una tarde lluviosa, Doña Bochita nació de una creencia
+                            simple: que la alta cocina es la forma definitiva de periodismo.</p>
+                        <p>Buscamos leyendas locales y rarezas globales para seleccionar una oferta estacional que hable
+                            de la tierra, el mar y el fuego de nuestra cocina abierta. Cada reserva es una invitación a
+                            unirse a la conversación.</p>
+                    </div>
+                    <div class="mt-12">
+                        <span class="text-primary font-label flex items-center gap-2 group action-button"
+                            data-btn="Conoce más">
+                            Conoce más sobre nuestro legado
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platos Destacados -->
+        <section class="py-32 bg-surface">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div>
+                        <span class="text-primary font-label tracking-widest uppercase text-xs font-bold">Especiales de
+                            Temporada</span>
+                        <h2 class="text-4xl md:text-5xl font-headline text-on-surface mt-2">Edición Otoño</h2>
+                    </div>
+                    <p class="text-on-surface-variant max-w-sm text-sm">Una selección curada de nuestros platos más
+                        destacados para la temporada actual, enfatizando tonos terrosos y texturas profundas.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    <!-- Destacado Grande -->
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-lg bg-surface-container h-[500px]">
+                        <div class="w-full h-full bg-cover-center vieira-image opacity-60"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-10">
+                            <span
+                                class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest uppercase mb-4 rounded-sm">Firma</span>
+                            <h3 class="text-3xl font-headline text-on-surface mb-2">Camarones al Ajillo</h3>
+                            <p class="text-on-surface-variant max-w-md mb-6">Camarones salteados con ajo, coral de tinta
+                                de calamar, emulsión de limón confitado y espuma de rocío marino.</p>
+                            <span class="text-primary font-headline text-xl">$42</span>
+                        </div>
+                    </div>
+
+                    <!-- Ribeye -->
+                    <div class="md:col-span-4 group bg-surface-container-high rounded-lg overflow-hidden flex flex-col">
+                        <div class="h-1/2 overflow-hidden">
+                            <div class="w-full h-full bg-cover-center ribeye-image"></div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-headline text-on-surface mb-2">Bistec Editorial Madurado</h3>
+                                <p class="text-sm text-on-surface-variant line-clamp-2">Carne madurada 45 días,
+                                    mantequilla de tuétano carbonizado, sal ahumada.</p>
+                            </div>
+                            <span class="text-primary font-headline text-lg mt-4">$68</span>
+                        </div>
+                    </div>
+
+                    <!-- Ensalada -->
+                    <div class="md:col-span-4 group bg-surface-container-high rounded-lg overflow-hidden flex flex-col">
+                        <div class="h-48 overflow-hidden">
+                            <div class="w-full h-full bg-cover-center ensalada-image"></div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-headline text-on-surface mb-2">Ensalada del Jardín Salvaje</h3>
+                            <p class="text-sm text-on-surface-variant">Vegetales de raíz heirloom, chèvre batido, trufa
+                                terrosa y tinta balsámica.</p>
+                            <span class="text-primary font-headline text-lg mt-4 block">$24</span>
+                        </div>
+                    </div>
+
+                    <!-- Postre -->
+                    <div
+                        class="md:col-span-8 group relative rounded-lg overflow-hidden bg-surface-container-high flex flex-col md:flex-row h-auto md:h-64">
+                        <div class="md:w-1/2 h-48 md:h-full overflow-hidden">
+                            <div class="w-full h-full bg-cover-center postre-image"></div>
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <span
+                                class="text-[10px] font-bold tracking-widest uppercase text-tertiary mb-2">Postre</span>
+                            <h3 class="text-2xl font-headline text-on-surface mb-2">El Verso Final</h3>
+                            <p class="text-sm text-on-surface-variant mb-4">Chocolate oscuro Valrhona, corazón de
+                                caramelo salado, polvo de espresso y acabado de pan de oro.</p>
+                            <span class="text-primary font-headline text-lg">$18</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservas -->
+        <section class="py-32 bg-surface-container-lowest">
+            <div
+                class="max-w-5xl mx-auto px-8 text-center bg-surface-container rounded-xl p-16 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-container/5 rounded-full -ml-32 -mb-32 blur-3xl">
+                </div>
+                <h2 class="text-4xl md:text-5xl font-headline text-on-surface mb-6 italic leading-tight">Asegura tu
+                    Capítulo</h2>
+                <p class="text-on-surface-variant max-w-2xl mx-auto mb-10 text-lg leading-relaxed">
+                    Las mesas están diseñadas para la conversación íntima. Recomendamos reservar con al menos siete días
+                    de anticipación para las ediciones de fin de semana.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 max-w-3xl mx-auto">
+                    <div class="flex-1">
+                        <input
+                            class="w-full bg-surface-container-low border-b border-outline-variant/40 border-t-0 border-x-0 focus:ring-0 focus:border-primary text-on-surface py-4 px-4 font-body"
+                            placeholder="Fecha y Hora" type="text" />
+                    </div>
+                    <div class="flex-1">
+                        <input
+                            class="w-full bg-surface-container-low border-b border-outline-variant/40 border-t-0 border-x-0 focus:ring-0 focus:border-primary text-on-surface py-4 px-4 font-body"
+                            placeholder="Comensales" type="number" />
+                    </div>
+                    <span
+                        class="btn-primary text-on-primary px-10 py-4 rounded-md font-label font-bold tracking-widest uppercase action-button"
+                        data-btn="Reservar Ahora">
+                        Reservar Ahora
+                    </span>
+                </div>
+                <p class="mt-8 text-on-surface-variant text-sm flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-sm">menu_book</span>
+                    Practicas de Aplicaciones Gráficas
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#161311] dark:bg-stone-950 w-full border-t border-[#56423d]/20">
+        <div class="flex justify-center items-center px-12 py-8 w-full max-w-7xl mx-auto">
+            <div class="font-sans text-sm tracking-wide text-[#eae1dd] opacity-60">
+                © 2024 Doña Bochita. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
